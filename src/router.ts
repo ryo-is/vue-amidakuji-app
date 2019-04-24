@@ -1,8 +1,9 @@
-import Vue from "vue";
-import Router from "vue-router";
-import Home from "./views/home/Home.vue";
+import Vue from "vue"
+import Router from "vue-router"
+import Home from "./views/home/Home.vue"
+import Create from "./views/create/Create.vue"
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
   mode: "history",
@@ -12,6 +13,11 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home,
+    },
+    {
+      path: "/create",
+      name: "Create",
+      component: Create,
     }
   ],
-});
+})
